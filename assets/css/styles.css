@@ -1,0 +1,197 @@
+body {
+    font-family: 'Dosis', sans-serif;
+}
+.navbar {
+    grid-area: navbar;
+    display: flex;
+    background-color: #f6f5f1;
+   
+}
+.buscador {
+    grid-area: buscador;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.productos {
+    grid-area: productos;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+    gap: 2rem;
+}
+.page {
+    grid-area: page;
+}
+footer {
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f6f5f1;
+    padding-top: 1rem;
+}
+body {
+    display: grid;
+    grid-template-areas: 
+    "navbar"
+    "buscador"
+    "productos"
+    "page"
+    "footer";
+}
+.logo {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.nav-icon {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 2rem;
+    font-size: 2rem;
+}
+.navbar-collapse {
+    display: none;
+}
+select {
+    width: 90%;
+    
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    box-shadow: 0 4px 8px rgba(241, 213, 219, 1);
+    border-radius: 8px;
+    padding: 2rem;
+}
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card-body h5 {
+    font-size: 1.5rem;
+    margin: 0.5rem;
+}
+.card-body p {
+    margin: 0.5rem;
+}
+button {
+    background-color: #f1d5db;
+    border: none;
+    padding: 0.5rem;
+    margin-top: 1rem;
+}
+button a {
+    color: black;
+    text-decoration: none;
+}
+button:hover {
+    background-color: #D7BDE2;
+}
+button:active {
+    background-color: #f6f5f1;
+}
+.page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    counter-reset: page;
+    padding: 0 2rem;
+}
+.page-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    border: black;
+    box-shadow: 0 4px 8px rgba(241, 213, 219, 1);
+}
+.icono {
+    font-size: 1.5rem;
+    color: #4A235A;
+}
+.derechos {
+    margin: 0;
+}
+@media (min-width: 576px) and (max-width: 991px) {
+   .productos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 2rem;
+   }
+  }
+  @media (min-width: 992px) {
+    body {
+    display: grid;
+    grid-template-areas: 
+    "navbar buscador"
+    "navbar productos"
+    "footer page";
+    grid-template-columns: 20% 1fr;
+    }
+    .navbar {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .logo {
+        display: flex;
+    }
+    .nav-icon {
+        display: none;
+    }
+    .navbar-collapse {
+        display: block;
+        list-style: none;
+    }
+    .nav-item {
+       padding: 0.5rem;
+    }
+    .nav-link {
+        text-decoration: none;
+        color: black;
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+    .nav-link:hover {
+        background-color: #f1d5db;
+    }
+    .productos {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        margin: 2rem;
+    }
+    .page {
+        height: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+    .derechos {
+        font-weight: 500;
+        padding-bottom: 0.5rem;
+    }
+   }
+
+
+    
