@@ -5,7 +5,6 @@ body {
     grid-area: navbar;
     display: flex;
     background-color: #f6f5f1;
-   
 }
 .buscador {
     grid-area: buscador;
@@ -132,7 +131,32 @@ button:active {
     margin: 0;
 }
 @media (min-width: 576px) and (max-width: 991px) {
-   .productos{
+    .navbar {
+        
+    }
+    .nav-icon {
+        display: none;
+    }
+    .navbar-collapse {
+        width: 100%;
+        display: block;
+        list-style: none;
+        padding-left: 2rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .nav-item {
+        padding: 0.5rem;
+     }
+     .nav-link {
+         text-decoration: none;
+         color: black;
+         font-size: 1.5rem;
+         font-weight: 500;
+     }
+    .productos{
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 0 2rem;
@@ -155,7 +179,7 @@ button:active {
         align-items: center;
     }
     .logo {
-        display: flex;
+        padding-right: 2rem;
     }
     .nav-icon {
         display: none;
@@ -163,6 +187,7 @@ button:active {
     .navbar-collapse {
         display: block;
         list-style: none;
+        padding-right: 2rem;
     }
     .nav-item {
        padding: 0.5rem;
